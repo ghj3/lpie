@@ -264,5 +264,5 @@ def decrypt_story():
     ciphertext = CiphertextMessage(get_story_string())
     print(ciphertext)
     tp=ciphertext.decrypt_message()
-    return tp
+    return tp[1]
 print(decrypt_story())

@@ -207,12 +207,10 @@ class CiphertextMessage(Message):
         '''
         pass #delete this line and replace with your code here
 
-#Example test case (PlaintextMessage)
-plaintext = PlaintextMessage('hello', 2)
-print('Expected Output: jgnnq')
-print('Actual Output:', plaintext.get_message_text_encrypted())
-    
-#Example test case (CiphertextMessage)
-ciphertext = CiphertextMessage('jgnnq')
-print('Expected Output:', (24, 'hello'))
-print('Actual Output:', ciphertext.decrypt_message())
+
+def decrypt_story():
+    ciphertext = CiphertextMessage(get_story_string())
+    print(ciphertext)
+    tp=ciphertext.decrypt_message()
+    return tp
+print(decrypt_story())
